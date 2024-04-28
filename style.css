@@ -1,0 +1,431 @@
+#allbody{
+    min-height: 90vh;
+    background: url('/imgs/background.gif') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
+}
+#body{
+    transform: translate(0px,-20px);
+    width: 100%;
+}
+#startanmation{
+    transform: translateY(-29px);
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+@media only screen and (max-width:1000px) and (min-width:1px){
+    .navbar{
+        width: 98%;
+        text-align: center;
+        margin-left: 1%;
+    }
+    .navbar p::first-letter{
+        color: blue;
+        font-size: 100px;
+        font-weight: 700;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: 50px;
+        font-weight: bolder;
+        color: white;
+    }
+    .navbar label{
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .navbar input{
+        margin-right: 50px;
+    }
+    #litelabel {
+        margin-left: 50px;
+    }
+    .menubar{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .menubar div{
+        width: 50px;
+        height: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+    #btnorder{
+        display: block;
+        margin: auto;
+        color:green;
+        font-size: 30px;
+        margin-top: 30px;
+        border:none;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: underline;
+        animation: order infinite 3s   reverse;
+        cursor: pointer;
+    }
+    @keyframes order {
+        from{
+            transition: 2s;
+            color:rgb(13, 92, 13);
+            font-size: 30px;
+        }
+        to{
+            color:rgb(28, 228, 28);
+            font-size: 30px;
+        }
+    }
+    .body{
+        width: 300px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.64);
+        margin: auto;
+        margin-top: 50px;
+        border: double 5px white;
+        overflow: hidden;
+    }
+    .foater{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .foater a{
+        text-transform: capitalize;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        display: block;
+        margin-top: 15px;
+    }
+    .foater a:hover{
+        color: blue;
+        text-decoration: none;
+        transition: 1s;
+    }
+    .ph{
+        display: block;
+        text-align: center;
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .ph img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .ph img:hover{
+        rotate: 180deg;
+        transition: 1s;
+    }
+    .ph a{
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .menu{
+        width: 300px;
+        height: 700px;
+        background-color: blue;
+        position: absolute;
+        border-radius: 2px;
+        margin-top: -10px;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction:reverse ;
+        left: -300px;
+    }
+    .menu a{
+        display: block;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-top: 50px;
+        margin-left: 10px;
+        color: white;
+    }
+    .menu p{
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    @keyframes transetion {
+        from{
+            left: 0px;
+            transition: 1s;
+        }
+        to{
+            left: -300px;
+        }
+    }
+    @keyframes close {
+        from{
+            left: -300px;
+            transition: 1s;
+        }
+        to{
+            left: 0px;
+        }
+    }
+    ul{
+        margin-left: -39px;
+        margin-top: -3px;
+        list-style: none;
+        position:relative;
+        width: 1475px;
+        animation: slide infinite 15s  ease-in-out;
+    }
+    li{
+        float: left;
+    }
+    .body img{
+        width: 295px;
+        height: 200px;
+    }
+    @keyframes slide {
+        0%,20%{left: 0;}
+        30%,50%{left: -295px;}
+        60%,80%{left: -590px;}
+        80%,100%{left: -885px;}
+    }
+    .startanmation p{
+        color: white;
+        font-size: 30px;
+        font-weight: 1000;
+        text-align: center;
+    }
+    .startanmation img{
+        width: 200px;
+        height: 300px;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .startanmation button{
+        float: right;
+        transform: translate(0px,-120px);
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.283);
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width:4000px) and (min-width:1001px){
+    .navbar{
+        width: 98%;
+        text-align: center;
+        margin-left: 1%;
+    }
+    .navbar p::first-letter{
+        color: blue;
+        font-size: 100px;
+        font-weight: 700;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: 50px;
+        font-weight: bolder;
+        color: white;
+    }
+    .navbar label{
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .navbar input{
+        margin-right: 50px;
+    }
+    #litelabel {
+        margin-left: 100px;
+    }
+    .menubar{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .menubar div{
+        width: 50px;
+        height: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+    .body{
+        width: 500px;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.64);
+        margin: auto;
+        margin-top: 50px;
+        border: double 5px white;
+        overflow: hidden;
+    }
+    #btnorder{
+        display: block;
+        margin: auto;
+        color:green;
+        font-size: 30px;
+        margin-top: 30px;
+        border:none;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: underline;
+        animation: order infinite 3s   reverse;
+        cursor: pointer;
+    }
+    @keyframes order {
+        from{
+            transition: 2s;
+            color:rgb(13, 92, 13);
+            font-size: 30px;
+        }
+        to{
+            color:rgb(28, 228, 28);
+            font-size: 30px;
+        }
+    }
+    .foater{
+        height: 100px;
+        width: 500px;
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .foater a{
+        text-transform: capitalize;
+        color: white;
+        font-size: 20px;
+        margin-right: 50px;
+    }
+    .foater a:hover{
+        color: blue;
+        text-decoration: none;
+        transition: 1s;
+    }
+    .ph{
+        display: block;
+        text-align: center;
+        height: 150px;
+        width: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .ph img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .ph img:hover{
+        rotate: 180deg;
+        transition: 1s;
+    }
+    .ph a{
+        margin-right: 10px;
+    }
+    ul{
+        margin-left: -39px;
+        margin-top: -3px;
+        list-style: none;
+        position: relative;
+        width: 2475px;
+        animation: slide infinite 15s  ease-in-out;
+    }
+    li{
+        float: left;
+    }
+    .body img{
+        width: 495px;
+        height: 200px;
+    }
+    @keyframes slide {
+        0%,20%{left: 0;}
+        30%,50%{left: -495px;}
+        60%,80%{left: -990px;}
+        80%,100%{left: -1485px;}
+    }
+    .menu{
+        width: 300px;
+        height: 700px;
+        background-color: blue;
+        position: absolute;
+        border-radius: 2px;
+        margin-top: -10px;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction:reverse ;
+        left: -300px;
+    }
+    .menu a{
+        display: block;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-top: 50px;
+        margin-left: 10px;
+        color: white;
+    }
+    .menu p{
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    @keyframes transetion {
+        from{
+            left: 0px;
+            transition: 1s;
+        }
+        to{
+            left: -300px;
+        }
+    }
+    @keyframes close {
+        from{
+            left: -300px;
+            transition: 1s;
+        }
+        to{
+            left: 0px;
+        }
+    }
+    .startanmation p{
+        color: white;
+        font-size: 30px;
+        font-weight: 1000;
+        text-align: center;
+    }
+    .startanmation img{
+        width: 200px;
+        height: 300px;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .startanmation button{
+        float: right;
+        transform: translate(0px,-100px);
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.283);
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .startanmation button:hover{
+        background-color: green;
+    }
+}
